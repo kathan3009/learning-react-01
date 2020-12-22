@@ -1,0 +1,47 @@
+.cont{
+    margin: auto;
+    height: 100vh;
+    padding: 30px;
+    border-bottom:3px solid white ;
+    background-color: #05584b;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+   
+}
+
+.ani h1{
+    font-size: 55px;
+}
+.ani h2{
+    float: left;
+    margin-right: 100px;
+    font-size: 72px;
+    margin-top: 20px;
+    opacity: 0;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    opacity: 0.50;
+    color: white;
+}
+.nav-link{
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+p{
+    opacity: 0;
+}
