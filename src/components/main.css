@@ -1,9 +1,9 @@
 .cont{
     margin: auto;
-    height: 100vh;
+    width: auto;
     padding: 30px;
     border-bottom:3px solid white ;
-    background-color: #05584b;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
     color: white;
     text-align: center;
     overflow: hidden;
@@ -26,7 +26,6 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    opacity: 0.50;
     color: white;
 }
 .nav-link{
@@ -44,4 +43,23 @@
 }
 p{
     opacity: 0;
+}
+.top{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.plane{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.plane-img{
+    opacity: 0;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    left: 0%;
+    rotate: 180;
 }
