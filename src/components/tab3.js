@@ -16,7 +16,7 @@ const Tab3 = () => {
     drawPoint(x,y,ctx)
     if(arr)      
     { 
-     for(var i=0;i<10000;i++)
+     for(var i=0;i<50000;i++)
      {
        
       setTimeout( () => {    
@@ -35,13 +35,13 @@ const Tab3 = () => {
     ctx.beginPath();
     ctx.arc(x, y, 1, 0, Math.PI*2, true);   
     ctx.closePath();
-    ctx.fillStyle = "#00e1f5";
+    ctx.fillStyle = "#ffffff";
     ctx.fill();
  }
  function drawPolygon(ctx,a){
 
      const angle  = (2*Math.PI)/a;     
-     const radius = 350;                  
+     const radius = 200;                  
      var arrX=[]                        
      var arrY=[]
      var cenX = window.innerWidth/2
@@ -67,9 +67,12 @@ const Tab3 = () => {
  }
     return (
         <div className="cont">
-            <section>
-                <canvas ref={canvasRef}></canvas>
-            </section>
+            
+            <div className="inside">
+                  <canvas ref={canvasRef}></canvas>
+            </div>
+              
+           
         </div>
     )
 }
